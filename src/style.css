@@ -15,10 +15,10 @@
 
   /* Font sizes */
   --fs-small: 0.5rem;
-  --fs-regular: 1rem;
-  --fs-describer: 1.4rem;
-  --fs-header: 3.13rem;
-  --fs-highlight: 4.3rem;
+  --fs-regular: 1.7rem;
+  --fs-describer: 2.1rem;
+  --fs-header: 6.13rem;
+  --fs-highlight: 6.3rem;
 
   /* Font weights */
   --fw-thin: 400;
@@ -31,7 +31,7 @@
 }
 
 html {
-  /* font-size: 80%; */
+  font-size: 62.5%;
 }
 
 *,
@@ -117,19 +117,19 @@ button {
 
   /* ????????? */
   html {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 }
 
 @media only screen AND (max-width: 481px) {
   html {
-    font-size: 11px;
+    /* font-size: 11px; */
   }
 
   :root {
-    --section-padding: 16px;
     --fs-highlight: 4rem;
-    --fs-regular: 1.4rem;
-    --fs-describer: 1.6rem;
+    --fs-header: 3rem;
   }
+
+
 }

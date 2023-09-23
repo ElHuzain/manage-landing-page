@@ -78,6 +78,6 @@
     #about-us .text  p{
         margin-left: -5rem;
         width: fit-content;
-        text-align: center;
+        text-align: left;
     }
   }

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import Logo from '../../assets/imgs/logo.svg';
 import './NavBar.css';
-import Hamburger from '../../assets/imgs/icon-hamburger.svg'
-import Close from '../../assets/imgs/icon-close.svg';
+import Hamburger from '../../assets/imgs/icon-hamburger'
+import Close from '../../assets/imgs/icon-close';
 
 const NavBar = () => {
   const [sticker, setSticker] = useState(false);
@@ -14,7 +14,7 @@ const NavBar = () => {
   //   else setSticker(true);
   // })
 
-  function toggleVisibility () {
+  function toggleVisibility() {
     setVisibility(prev => !prev);
   }
 
@@ -22,7 +22,9 @@ const NavBar = () => {
     <header className={sticker && 'sticker'} id="navbar">
 
       <div onClick={() => setVisibility(prev => !prev)} className="logo">
-        <object onClick={() => setVisibility(prev => !prev)} data={Logo}></object>
+
+        <object data={Logo}></object>
+
       </div>
 
       <nav className={navBarVisible && 'visible'}>
@@ -32,7 +34,9 @@ const NavBar = () => {
       </nav>
 
       <div onClick={() => setVisibility(prev => !prev)} className="action">
-        <object data={navBarVisible ? Close : Hamburger}></object>
+        {
+          navBarVisible ? <Close className="phone-nav" /> : <Hamburger className="phone-nav" />
+        }
         <button className={sticker ? ' no-box-shadow hoverable' : 'hoverable'}>Get Started</button>
       </div>
 

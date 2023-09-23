@@ -12,7 +12,7 @@
     margin: auto 0;
 }
 
-#navbar .action >object {
+#navbar .action >svg {
     display: none;
 }
 
@@ -70,5 +70,9 @@
     #navbar .action > object {
         display: unset;
         z-index: 1 !important;
+    }
+
+    #navbar .action >svg {
+        display: unset;
     }
 }

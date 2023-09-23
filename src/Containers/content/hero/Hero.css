@@ -1,5 +1,5 @@
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url("../../../assets/imgs/bg-tablet-pattern.svg");
     background-size: contain;
@@ -34,7 +34,6 @@
 @media only screen AND (max-width: 1260px) {
 
     #hero {
-        height: 100vh;
         width: 100%;
         background-image: url("../../../assets/imgs/bg-tablet-pattern.svg");
         background-size: contain;
@@ -49,7 +48,6 @@
 
 @media only screen AND (max-width: 481px) {
     #hero {
-        height: 100vh;
         width: 100%;
         background-image: url("../../../assets/imgs/bg-tablet-pattern.svg");
         background-size: contain;
