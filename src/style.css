@@ -1,0 +1,135 @@
+/* @import url('https://fonts.google.com/specimen/Be+Vietnam+Pro'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700');
+
+:root {
+  /* Colors */
+  --primary-clr-1-btn: hsla(12, 88%, 59%, 0.218);
+  --primary-clr-1: hsl(12, 88%, 59%);
+  --primary-clr-2: hsl(228, 39%, 23%);
+
+  --neutral-clr-1: hsl(227, 12%, 61%);
+  --neutral-clr-2: hsl(233, 12%, 13%);
+  --neutral-clr-3: hsl(13, 100%, 96%);
+  --neutral-clr-4: hsl(0, 0%, 98%);
+
+  /* Font sizes */
+  --fs-small: 0.5rem;
+  --fs-regular: 1rem;
+  --fs-describer: 1.4rem;
+  --fs-header: 3.13rem;
+  --fs-highlight: 4.3rem;
+
+  /* Font weights */
+  --fw-thin: 400;
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  /* Defaults */
+  --section-padding: 10.9%;
+
+}
+
+html {
+  /* font-size: 80%; */
+}
+
+*,
+*::after,
+*::before {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-family: 'Be Vietnam Pro';
+  color: var(--primary-clr-2);
+  font-size: var(--fs-regular);
+  scroll-behavior: smooth;
+}
+
+.fs-small {
+  font-size: var(--fs-small);
+}
+
+.fs-regular {
+  font-size: var(--fs-regular);
+}
+
+.fs-describer {
+  font-size: var(--fs-describer);
+}
+
+.fs-header {
+  font-size: var(--fs-header);
+}
+
+.fs-highlight {
+  font-size: var(--fs-highlight);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fading-text {
+  color: var(--neutral-clr-1);
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-clr-1);
+  color: var(--neutral-clr-3);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-regular);
+  border: 0;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px 0.1px var(--primary-clr-1-btn);
+  width: fit-content;
+}
+
+@media only screen AND (max-width: 1610px) {
+  :root {
+    --section-padding: 5%;
+  }
+}
+
+@media only screen AND (max-width: 1260px) {
+  :root {
+    --section-padding: 50px;
+    --section-padding: 16px;
+    --fs-highlight: 4rem;
+    --fs-regular: 1.4rem;
+    --fs-describer: 1.6rem;
+  }
+
+  /* ????????? */
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen AND (max-width: 481px) {
+  html {
+    font-size: 11px;
+  }
+
+  :root {
+    --section-padding: 16px;
+    --fs-highlight: 4rem;
+    --fs-regular: 1.4rem;
+    --fs-describer: 1.6rem;
+  }
+}
