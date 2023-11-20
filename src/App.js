@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/ui/Header';
+import Hero from './components/sections/hero/Hero';
+import About from './components/sections/about/About';
+import Reviews from './components/sections/reviews/Reviews';
+import Footer from './components/ui/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App max-w-screen w-full min-h-screen bg-white relative overflow-x-hidden">
+      <Header />
+      {/* <img alt="" src="./images/bg-tablet-pattern.svg" className="absolute top-[-5%] right-[-12%] md:top-[-15%] md:right-[-5%] xl:top-[-12%] xl:right-[-4%] z-0" /> */}
+      <img alt="" src="./images/bg-tablet-pattern.svg" className="absolute top-[-60px] right-[-60px] z-0" />
+      <div className="flex flex-col gap-[6rem]">
+        <Hero />
+        <About />
+        <Reviews />
+      </div>
+      <Footer />
     </div>
   );
 }
